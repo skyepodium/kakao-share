@@ -14,6 +14,8 @@ export default {
     kakaoShare() {
       window.Kakao.Share.sendCustom({
         templateId: 83333,
+        // 카카오톡이 설치 되지 않았을때 마켓으로 이동
+        installTalk: true
       });
     },
   },
